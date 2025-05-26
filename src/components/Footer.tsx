@@ -1,6 +1,10 @@
 import React from "react";
 import "./Footer.css";
 
+import facebookIcon from "../assets/facebook.svg";
+import instagramIcon from "../assets/ant-design_instagram-outlined.svg";
+import twitterIcon from "../assets/twitter.svg";
+
 const Footer: React.FC = () => {
   return (
     <footer className="footer">
@@ -8,13 +12,13 @@ const Footer: React.FC = () => {
         <div className="footer-brand">Bandage</div>
         <div className="footer-socials" aria-label="Social Media">
           <a href="#" className="footer-social" aria-label="Facebook">
-            <img src="src/assets/facebook.svg" alt="" />
+            <img src={facebookIcon} alt="Facebook" />
           </a>
           <a href="#" className="footer-social" aria-label="Instagram">
-            <img src="src/assets/ant-design_instagram-outlined.svg" alt="" />
+            <img src={instagramIcon} alt="Instagram" />
           </a>
           <a href="#" className="footer-social" aria-label="Twitter">
-            <img src="src/assets/twitter.svg" alt="" />
+            <img src={twitterIcon} alt="Twitter" />
           </a>
         </div>
       </div>

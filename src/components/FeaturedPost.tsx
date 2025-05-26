@@ -1,10 +1,16 @@
-import React from 'react';
 import './FeaturedPost.css';
+
+import unsplash1 from "../assets/unsplash_hHdHCfAifHU.png";
+import unsplash2 from "../assets/unsplash_tVEqStC2uz8.png";
+import unsplash3 from "../assets/unsplash_dEGu-oCuB1Y.png";
+import iconDate from "../assets/coolicon.svg";
+import iconComment from "../assets/Vector.svg";
+import iconLearnMore from "../assets/none.svg";
 
 const posts = [
   {
     id: 1,
-    imageSrc: "src/assets/unsplash_hHdHCfAifHU.png",
+    imageSrc: unsplash1,
     imageAlt: "Blog Post 1",
     tags: ["Google", "Trending", "New"],
     title: "Loudest à la Madison #1 (L'intégral)",
@@ -14,7 +20,7 @@ const posts = [
   },
   {
     id: 2,
-    imageSrc: "src/assets/unsplash_tVEqStC2uz8.png",
+    imageSrc: unsplash2,
     imageAlt: "Blog Post 2",
     tags: ["Google", "Trending", "New"],
     title: "Loudest à la Madison #1 (L'intégral)",
@@ -24,7 +30,7 @@ const posts = [
   },
   {
     id: 3,
-    imageSrc: "src/assets/unsplash_dEGu-oCuB1Y.png",
+    imageSrc: unsplash3,
     imageAlt: "Blog Post 3",
     tags: ["Google", "Trending", "New"],
     title: "Loudest à la Madison #1 (L'intégral)",
@@ -73,17 +79,17 @@ const FeaturedPostsSection = () => (
             <p className="post-card__desc">{post.description}</p>
             <div className="post-card__meta-row">
               <span className="post-card__meta">
-                <img src="src/assets/coolicon.svg" alt="" />
+                <img src={iconDate} alt="" />
                 <span className="post-card__meta-text">{post.date}</span>
               </span>
               <span className="post-card__meta">
-                <img src="src/assets/Vector.svg" alt="" />
+                <img src={iconComment} alt="" />
                 <span className="post-card__meta-text">{post.comments} comments</span>
               </span>
             </div>
             <a href="#" className="post-card__learn-more">
               <span>Learn More</span>
-              <img src="src/assets/@none.svg" alt="" />
+              <img src={iconLearnMore} alt="" />
             </a>
           </div>
         </article>

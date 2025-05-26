@@ -6,32 +6,50 @@ import mediaBgCover1 from "../../assets/media-bg-cover-1.png";
 import mediaBgCover2 from "../../assets/media-bg-cover-2.png";
 import mediaBgCover3 from "../../assets/media-bg-cover-3.png";
 
+import callIcon from "../../assets/call.svg";
+import emailIcon from "../../assets/email.svg";
+import instagramIcon from "../../assets/wins.svg";
+import youtubeIcon from "../../assets/youtube.svg";
+import facebookIcon from "../../assets/facewhite.svg";
+import twitterIcon from "../../assets/tweetwhi.svg";
+import searchIcon from "../../assets/search.svg";
+import cartIcon from "../../assets/cart.svg";
+import wishlistIcon from "../../assets/love.svg";
+import arrowDownIcon from "../../assets/arrowdown.svg";
+import loginIcon from "../../assets/login.svg";
+
 const PhoneIcon = () => (
-  <img src="src/assets/call.svg" alt="" />
+  <img src={callIcon} alt="Phone" />
 );
 const EmailIcon = () => (
-  <img src="src/assets/email.svg" alt="" />
+  <img src={emailIcon} alt="Email" />
 );
 const InstagramIcon = () => (
-  <img src="src/assets/wins.svg" alt="" />
+  <img src={instagramIcon} alt="Instagram" />
 );
 const YoutubeIcon = () => (
-  <img src="src/assets/youtube.svg" alt="" />
+  <img src={youtubeIcon} alt="Youtube" />
 );
 const FacebookIcon = () => (
-  <img src="src/assets/facewhite.svg" alt="" />
+  <img src={facebookIcon} alt="Facebook" />
 );
 const TwitterIcon = () => (
-  <img src="src/assets/tweetwhi.svg" alt="" />
+  <img src={twitterIcon} alt="Twitter" />
 );
 const SearchIcon = () => (
-  <img src="src/assets/search.svg" alt="" />
+  <img src={searchIcon} alt="Search" />
 );
 const CartIcon = () => (
-  <img src="src/assets/cart.svg" alt="" />
+  <img src={cartIcon} alt="Cart" />
 );
 const WishlistIcon = () => (
-  <img src="src/assets/love.svg" alt="" />
+  <img src={wishlistIcon} alt="Wishlist" />
+);
+const ArrowDownIcon = () => (
+  <img src={arrowDownIcon} alt="" />
+);
+const LoginIcon = () => (
+  <img className="login-icon" src={loginIcon} alt="" />
 );
 
 interface ProductCardProps {
@@ -106,7 +124,7 @@ const ProductShowcase: React.FC = () => {
             <ul className="navbar-center">
               <li><a href="#">Home</a></li>
               <li>
-                <a href="#">Shop <span className="arrow"><img src="src/assets/arrowdown.svg" alt="" /></span></a>
+                <a href="#">Shop <span className="arrow"><ArrowDownIcon /></span></a>
               </li>
               <li><a href="#">About</a></li>
               <li><a href="#">Blog</a></li>
@@ -117,7 +135,7 @@ const ProductShowcase: React.FC = () => {
           <div className="union-right">
             <div className="navbar-right">
               <a href="#" className="navbar-link login-link">
-                <img className="login-icon" src="src/assets/login.svg" alt="" />
+                <LoginIcon />
                 Login / Register
               </a>  
               <a href="#" className="navbar-icon"><SearchIcon /></a>
